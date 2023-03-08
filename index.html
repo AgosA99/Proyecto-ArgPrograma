@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <main class="contenido">
+        <section >
+            <div class="imagen"> 
+            <img src="https://randomuser.me/api/portraits/women/95.jpg" alt="Michelle Brooks" title="Michelle Brooks">
+            </div>
+
+            <div id="sobremi">  
+                <h2>Michelle Brooks</h2>
+                <p>Soy una persona proactiva, excelente compañero de equipo, organizado y responsable.<br>Busco un puesto desafiante donde pueda compartir lo aprendido y a la vez continuar sumando conocimientos.</p>
+            </div>
+            <div>
+                <h3>Datos personales</h3>
+                <h4>Correo Electrónico</h4>
+                <p>michelle.brooks@mail.com</p>
+                <h4>Teléfono</h4>
+                <p>(900) 852-3573</p>
+                <h4>Dirección</h4>
+                <p>3730 Hillcrest Rd</p>
+                <h4>Fecha de nacimiento</h4>
+                <p>6/8/1992</p>
+            </div>
+        </section>
+        
+        <section  id="Experiencia">
+            <div class="experiencia">
+                <h3>Experiencia</h3>
+                <h4>Programadora Web - (mar 2015 - dic 2017)</h4>
+                <h5>Sistemas Informáticos SL, Madrid</h5>
+                <ul class="experiencia_li">
+                    <li>Desarrollo de aplicaciones web para clientes de la empresa del sector financiero utilizando Javascripy, PHP.</li>
+                    <li>Mantenimiento de aplicaciones web.</li>
+                    <li>Maquetación HTML5, CSS3, Bootstrap.</li>
+                </ul>
+
+                <h4>Programador Full Stack - (ene 2016 - oct 2021)</h4>
+                <h5>Finanbest, Madrid</h5>
+                <ul>
+                    <li>Desarrollo Front End y Back End de aplicaciones con Typescript, Javascript, PHP, MySQL, HTML5.</li>
+                    <li>Realización de test de aplicaciones.</li>
+                    <li>Solución de incidencias.</li>
+                </ul>
+
+                <h4>Analista - Programador - (nov 2021 - presente)</h4>
+                <h5>Servicios Técnicos IT, Bilbao</h5>
+                <ul>
+                    <li>Toma de requerimientos con el cliente.</li>
+                    <li>Análisis de requerimientos y diseños de aplicaciones.</li>
+                    <li>Desarrollo de aplicaciones utilizando Javascript, PHP, MySQL.</li>
+                    <li>Soporte técnico a clientes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Habilidades">   
+            <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul class="habilidades">
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>HTML5</li>
+                    <li>Typescript</li>
+                    <li>Angular</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Contacto">
+            
+            <h3 class="formh3">Deje sus datos y me comunicaré con usted</h3>
+            <form id="formulario" class="formulario" action="">
+                <div class="formulario1">
+
+                    <div class="form">
+                        <label for="Nombre"> Nombre </label>
+                        <input type="text" id="Nombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="form">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" id="Apellido" placeholder="Apellido">
+                    </div>
+                
+                    <div class="form">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" placeholder="Correo" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="Teléfono">Telefono</label>
+                        <input type="number" id="Telefono" placeholder="Teléfono" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="20" rows="4" placeholder="Motivo del contacto" ></textarea>
+                    </div>
+
+                    <button type="button" id="boton"> Enviar </button>
+
+                    <p id="demo"></p>
+
+                    <script src="script.js"></script>
+                </div>
+
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>    
+        <h3>¡Gracias por su tiempo!</h3>
+    </footer>
+</body>
+</html>
